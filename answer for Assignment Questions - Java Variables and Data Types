@@ -1,0 +1,59 @@
+import java.util.Scanner;
+
+public class HelloWorld {
+    public static void main(String[]args){
+        Scanner scn = new Scanner(System.in);
+
+ //Q1 - Take 2 integer values in two variables x and y and print their product.
+
+ int number1,number2,result;
+ System.out.println("Enter First Number: ");
+ number1= scn.nextInt();
+ System.out.println("Enter Secound Number: ");
+ number2 = scn.nextInt();
+ result=number1+number2;
+ System.out.println("Sum of your number is: "+result);
+
+
+
+ //Q2 - Print the ASCII value of character ‘U’.
+ char chHai='U';
+ int val1=chHai;
+ System.out.println(val1);
+
+ //Q3 - Write a Java program to take the length and breadth of a rectangle and print its area.
+
+ int area,length,breadth;
+ System.out.println("enter the length : ");
+ length=scn.nextInt();
+ System.out.println("enter the breadth : ");
+ breadth=scn.nextInt();
+ area=(length*breadth);
+ System.out.println("The area of rectrangle is "+ area);
+
+
+
+
+ //Q4 - Write a Java program to calculate the cube of a number.
+
+ int cube,result1;
+ System.out.println("enter the side of a cube");
+ cube=scn.nextInt();
+ result1=cube*cube*cube;
+ System.out.println(result1);
+    //Q5 - Write a Java program to swap two numbers with the help of a third variable.
+
+    int a,b,c;
+ System.out.println("enter a number");
+    a=scn.nextInt();
+ System.out.println("enter another number");
+    b=scn.nextInt();
+ System.out.println(a+","+b);
+    c=a;
+    a=b;
+    b=c;
+ System.out.print("the swaped value is "+a+","+b);
+
+}
+
+}
