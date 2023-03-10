@@ -1,0 +1,152 @@
+import java.util.Scanner;
+public class lac6 {
+    public static void main(String args[]){
+        Scanner scn =new Scanner(System.in);
+        /*
+        int a,b;
+        System.out.println("enter length");
+        a=scn.nextInt();
+        System.out.println("enter bridth");
+        b=scn.nextInt();
+        if (a==b){
+            System.out.println("it's a square");
+
+        }
+        else{
+            System.out.println("it's a Rectrangle");
+        }
+        Q2 - Write a program to print absolute value of a number entered by the user.
+        Sample Input :-1
+        Sample Output :1
+
+        int i;
+        System.out.println("enter value");
+        i=scn.nextInt();
+
+        if (i<0){
+            i=i*(-1);
+            System.out.println("the absolute value is "+i);
+        }
+        else if(i>=0){
+            System.out.println("the absolute value is " +i);
+        }
+        else{
+            System.out.println("invalid input");
+        }
+
+        Q3 - Write a program to take input from user for Cost Price (C.P.) and Selling Price(S.P.) and
+                calculate Profit or Loss.
+
+        int cost,sell;
+        System.out.println("enter cost price");
+        cost=scn.nextInt();
+        System.out.println("enter selling price");
+        sell=scn.nextInt();
+        if (cost>sell){
+            System.out.println("loss = "+(cost-sell));
+
+        }
+        else if (sell>cost){
+            System.out.println("profit = "+(sell-cost));
+        }
+        else if (cost==sell) {
+            System.out.println("no profit no loss");
+        }
+        else {
+            System.out.println("invalid");
+        }
+
+
+        Q4 - Write a program to print positive number entered by the user, if user enters a negative
+        number, it is skipped
+
+
+
+        int inp;
+        System.out.println("enter your integer");
+        inp=scn.nextInt();
+        if(inp>=0){
+            System.out.println(inp);
+        }
+        else if (inp<0) {
+            System.out.println("the number is negatyive and skipped");
+
+        }
+        else {
+            System.out.println("invalid");
+        }
+
+        Q5 - Create a calculator using switch statement to perform addition, subtraction, multiplication
+        and division.
+        Enter an operator (+, -, *, /): -
+        Enter two numbers:
+        6
+        8
+
+        int a,b,c , result;
+        System.out.println("Enter an operator (+, -, *, /):");
+        c=scn.next().charAt(0);
+        System.out.println("1st number ");
+        a= scn.nextInt();
+        System.out.println("2nd number ");
+        b=scn.nextInt();
+        switch (c){
+            case '+':
+                result=a+b;
+                System.out.println("a +b = "+result);
+                break;
+            case'-':
+                result=a-b;
+                System.out.println("a-b = " +result);
+                break;
+            case '*':
+                result=a*b;
+                System.out.println("a*b ="+result);
+                break;
+            case '/':
+                result=a/b;
+                System.out.println("a/b= "+result);
+                break;
+            default:
+                System.out.println("invalid");
+                break;
+        }
+
+
+
+        Q6 - Write a program to calculate marks to grades . Follow the conversion rule as given below
+        
+
+         */
+        int marks;
+        System.out.print("Enter the marks : ");
+        marks=scn.nextInt();
+        if(marks>=90)
+        {
+            System.out.print("Your Grade is A+");
+        }else if(marks>=80)
+        {
+            System.out.print("Your Grade is A");
+        }else if(marks>=70)
+        {
+            System.out.print("Your Grade is B+");
+        }else if(marks>=60)
+        {
+            System.out.print("Your Grade is B");
+        }else if(marks>=50)
+        {
+            System.out.print("Your Grade is C");
+        }else if(marks>=40)
+        {
+            System.out.print("Your Grade is D");
+        }else if(marks>=30)
+        {
+            System.out.print("Your Grade is E");
+        }else if(marks<30){
+            System.out.print("Your Grade is f");
+        }else{
+            System.out.print("Enter valid marks");
+        }
+
+    }
+}
