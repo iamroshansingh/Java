@@ -1,0 +1,84 @@
+import java.util.Scanner;
+public class lac5 {
+    public static void main(String[] args){
+        Scanner scn = new Scanner(System.in);
+        /*
+        Q1 - Write a program to add 8 to the number x and then divide it by 3. Now, the modulus of the quotient
+is taken with 5 and then multiply the resultant value by 5. Display the final result.
+Input: 2345
+Output: 20
+
+
+        int a;
+        a=scn.nextInt();
+        a=a+8;
+        int b =a/3;
+        b=b%5;
+        b=b*5;
+        System.out.println(b);
+
+
+        Q2- Swap two numbers without the use of third variable.
+        Input: 5 10
+        Output: 10 5
+
+
+
+        int a,b,c;
+        a=scn.nextInt();
+        b=scn.nextInt();
+        c=a;
+        a=b;
+        b=c;
+        System.out.println("a :"+a);
+        System.out.println("b :"+b);
+
+        Q3 - Write a program to calculate the sum of the digits of a 3-digit number.
+        Input: 132
+        Output: 6
+
+        System.out.println("enter a 3 digit number");
+        int  a= scn.nextInt();
+        int b=0;
+        for (int i =0;i<3;i++){
+            b+=a%10;
+            a=a/10;
+            System.out.println(a);
+            System.out.println(b);
+
+        }
+        System.out.println(b);
+        Q4 - Assign values of variables 'a' and 'b' as 55 and 70 respectively and then check if:
+        i) both the conditions 'a < 50' and 'a < b' are true.
+        ii) at least one of the conditions 'a < 50' or 'a <b
+
+
+
+        int a,b;
+        a=55;
+        b=70;
+        if(a<50 && a<b){
+            System.out.println("a<50 && a<b");
+        } else if (a<50 || a<b) {
+            System.out.println("'a < 50' or 'a <b");
+        }
+
+        Q5 - Find the total number of bits needed to be flipped to convert x to y.
+Input: 65 80
+Output: 2
+         */
+
+        int x = scn.nextInt();
+        int y = scn.nextInt();
+        int n = x ^ y;
+        int count = 0;
+        while (n != 0){
+                        n = n & (n - 1);
+                        count++;
+        }
+        System.out.print(count);
+
+
+    }
+
+}
